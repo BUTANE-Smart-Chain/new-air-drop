@@ -18,6 +18,9 @@ function Header() {
     library
   } = useMetaMask();
 
+  // Define link styles
+  
+
     // Define some basic styles
   const textStyle = {
     fontFamily: 'Arial, sans-serif',
@@ -38,6 +41,10 @@ function Header() {
           <a href="https://butane.tech" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-auto">
             <img className="logo-image" src={process.env.PUBLIC_URL +'/assets/images/logo/p3.png'} alt="mdo" width="auto" height="42"/>
           </a>
+
+          <a href="https://t.me/butanechain" target="_blank" rel="noopener noreferrer" className="linkStyle">Telegram</a>
+          <a href="https://discord.com/your_discord_link" target="_blank" rel="noopener noreferrer" className="linkStyle">Discord</a>
+
 
           {isActive?
             (
