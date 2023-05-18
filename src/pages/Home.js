@@ -105,7 +105,7 @@ function Home({rel,id}) {
     };
 
     useEffect(() => {
-        document.title = "XPacman Airdrop";
+        document.title = " Referral Program - Butane Network";
         tokenInfo();
     }, []);
 
@@ -125,73 +125,48 @@ function Home({rel,id}) {
         }
 
     }, [params]);
+
     return (
         <>
-        <div className="container col-xxl-8 px-4 py-5">
-            <div className="row flex-lg-row align-items-center g-5 py-5">
-           
-            <div className="col-lg-6">
-                <div className='head-bar'/>
-                <h1 className="display-5 lh-1 my-3 title-text fw-600">Airdrop<br/>XPacman Token</h1>
-                
-                <p className="lead py-3">
-                    <div className='mb-4'>Connect your wallet and claim or generate your refferal link to share airdrop</div>
-                    <div>Use Testnet Binance Smart Chain</div>
-                    <a className='text-warning' href='https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain' rel='nofollow' target='_blank'><div>Add Testnet BSC Network to your wallet</div></a>
-                </p>
-                <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div className="container col-xxl-8 px-4 py-5">
+                <div className="row flex-lg-row align-items-center g-5 py-5">
+                    <div className="col-lg-6">
+                        
+                        <h1 className="display-5 lh-1 my-3 title-text fw-600">Referral<br/>Butane $BBC</h1>
+                        <p className="lead py-3">
+                            <div className='mb-4'>Connect your wallet to generate your referral link to share to your friends and family.</div>
+                            <div>Make Sure To Use Butane Smart Chain</div>
+                            <a className='text-warning' href='https://docs.butane.tech/developers/network-details/usdbbc-mainnet-+-testnet' rel='noreferrer' target='_blank'>
+                                <div>Add BBC Network to your wallet</div>
+                            </a>
+                        </p>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                            {isActive && account?
+                                <>
+                                    <button 
+                                        type="button" 
+                                        className="btn btn-info btn-lg px-4 w-100" 
+                                        disabled={loading}
+                                        onClick={handleCopyToClipboard()}>
+                                            <i className="fa-regular fa-coin-blank"></i>{loading?'Loading Faucet...':'Copy your referral link'}
+                                    </button>
+                                </>
+                                :
+                                <a href="/wallet" className='w-100'>
+                                    <button type="button" className="btn btn-primary btn-lg px-4 w-100" >
+                                        <i className="fa-regular fa-coin-blank"></i>Connect Your Wallet
+                                    </button>
+                                </a>
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="col-lg-6">
-                <label className='small'>Token Address:</label>
-                <div className='text-white mb-3'>{TOKEN_STAKE.address}</div>
-                <label className='small'>Token Name:</label>
-                <div className='text-white mb-3'>{tokenName}</div>
-                <label className='small'>Symbol:</label>
-                <div className='text-white mb-3'>{tokenSymbol}</div>
-                <label className='small'>Decimals:</label>
-                <div className='text-white mb-3'>{tokenDecimal}</div>
-                <label className='small'>Total Suply:</label>
-                <div className='text-white mb-3'>{tokenSupply?.toFixed(0)}</div>
-
-             
-                <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                    {isActive && account?
-                        <button 
-                            type="button" 
-                            className="btn btn-warning btn-lg px-4 w-100" 
-                            disabled={loading}
-                            onClick={() => {
-                                claimAirdrop();
-                            }}>
-                                <i class="fa-regular fa-coin-blank"></i>{loading?'Loading Faucet...':'Claim Airdrop!'}
-                        </button>
-                        :
-                        <a href="/wallet" className='w-100'><button type="button" className="btn btn-primary btn-lg px-4 w-100" ><i class="fa-regular fa-coin-blank"></i>Connect Your Wallet</button></a>
-                    }
-                    
-                </div>
-                {isActive && account?
-                <>
-                <div className='text-center my-4'>- OR -</div>
-                <button 
-                    type="button" 
-                    className="btn btn-info btn-lg px-4 w-100" 
-                    disabled={loading}
-                    onClick={handleCopyToClipboard()}>
-                        <i class="fa-regular fa-coin-blank"></i>{loading?'Loading Faucet...':'Copy your referal link'}
-                </button>
-                </>
-                :''
-                
-                }
-            </div>
-            </div>
-        </div>
-        
-        <ToastContainer />
+            <ToastContainer />
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;

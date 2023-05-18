@@ -61,10 +61,10 @@ export default function Index() {
         <>
         <div className='container'>
             <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="assets/images/misc/wallet.png" alt="" width="192" height="192"/>
+                <img class="center-image d-block mx-auto mb-4" src="assets/images/misc/p1.png" alt="" max-width="172" height="192"/>
                 <h1 class="display-5 fw-bold">Connect your wallet</h1>
                 <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                
                 
                 </div>
             </div>

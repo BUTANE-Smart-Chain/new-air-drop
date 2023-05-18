@@ -1,7 +1,7 @@
 
 import AbiToken from "../abi/AbiToken.json";
 export const Global ={
-    URL :'https://airdropbsc.xpacman.com'
+    URL :'https://butane.tech',
 }
 export const walletProvider = {
     METAMASK: 'metaMask',

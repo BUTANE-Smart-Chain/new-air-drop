@@ -2,22 +2,61 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext');
 
 
+  
+
 body{
-  background-image: url('../../public/assets/images/background/bg-bubble.png');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   background-color: #191919;
-  color: #bbb;
+  color: #f2f1f1;
   font-family: 'Poppins';
 }
-.normal-text{
-  color: #bbb;
+
+
+.wallet-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 400px;
+  margin: auto;
 }
+
+.wallet-card {
+  /* Styles for the card. Adjust as necessary. */
+  color: #fff;
+  background-color: #333;
+}
+
+.wallet-title {
+  /* Styles for the title. Adjust as necessary. */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.wallet-description {
+  /* Styles for the description. Adjust as necessary. */
+  font-size: 1em;
+  color: #aaa;
+}
+
+
+
+.logo-image {
+  margin-right: 25px; /* adjust the value as needed */
+}
+
+.normal-text{
+  color: #ed2525;
+}
+
 .title-text{
-  color:#f9f8f8;
+  color: #ed1e1e;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 52px;
+
 }
 .fw-600{
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .head-bar{
@@ -40,9 +79,45 @@ height: auto;
   margin-top: 120px;
 }
 
-/* .btn-primary{
+ .btn-primary{
   border-radius: 18px;
-} */
+  background-color: #ed2525;
+  border-color: #ed2525;
+  color: #f9f8f8;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+} 
+
+.btn {
+  border-radius: 50rem;
+  background-color: #ed2525;
+  border-color: #ed2525;
+  color: #f9f8f8;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.btn:hover{
+  background-color: #f9f8f8;
+  border-color: #f9f8f8;
+  color: #ed2525;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  
+}
+
+.btn-primary:hover{
+  background-color: #f9f8f8;
+  border-color: #f9f8f8;
+  color: #ed2525;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  
+}
 .App {
   text-align: center;
 }
@@ -52,11 +127,7 @@ height: auto;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -73,14 +144,6 @@ height: auto;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -90,29 +153,341 @@ height: auto;
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+@media screen and (max-width: 768px) {
+  .App-header {
+    min-height: 100vh;
   }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
 }
+
+@media screen and (max-width: 992px) {
+  .App-header {
+    min-height: 100vh;
+  }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
+}
+  
+@media screen and (max-width: 1200px) {
+  .App-header {
+    min-height: 100vh;
+  }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
+}
+  
+@media screen and (min-width: 400px) {
+  .App-header {
+    min-height: 100vh;
+  }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
+}
+  
+@media screen and (min-width: 600px) {
+  .App-header {
+    min-height: 100vh;
+  }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
+}
+  
+@media screen and (min-width: 800px) {
+  .App-header {
+    min-height: 100vh;
+  }
+  .btn-primary {
+    border-radius: 18px;
+    background-color: #ed2525;
+    border-color: #ed2525;
+    color: #f9f8f8;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .normal-text {
+    color: #ed2525;
+  }
+  .btn-primary:hover {
+    background-color: #f9f8f8;
+    border-color: #f9f8f8;
+    color: #ed2525;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title-text {
+    color: #ed1e1e;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fw-600 {
+    font-weight: 800;
+  }
+  .head-bar {
+    width: 96px;
+    height: 8px;
+    background-color: #f9f8f8;
+  }
+  .img-coin {
+    width: 64px;
+    height: auto;
+  }
+  .staking-panel-button-margin {
+    margin-top: 80px;
+  }
+  .staking-panel-input-margin {
+    margin-top: 30px;
+  }
+  .footer-margin {
+    margin-top: 120px;
+  }
+
+}
+
+
+
 
 /* ===== heroes =====*/
-@media (min-width: 992px) {
-  .rounded-lg-3 { border-radius: .3rem; }
-}
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
 
 .b-example-divider {
   height: 3rem;
@@ -275,3 +650,4 @@ height: auto;
   height: 5rem;
   width: 5rem;
 }
+

@@ -4,14 +4,16 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-  background-image: url('../public/assets/images/background/bg-bubble.png');
+  background-image: url('../public/assets/images/background/bicon.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 body::before {
-  background-color: aqua;
+  background-color: rgb(245, 26, 15);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ 
+  
