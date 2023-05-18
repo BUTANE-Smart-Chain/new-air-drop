@@ -39,7 +39,7 @@ function Header() {
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="https://butane.tech" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-auto">
-            <img className="logo-image" src={process.env.PUBLIC_URL +'/assets/images/logo/p3.png'} alt="mdo" width="auto" height="42"/>
+            <img className="logo-image" src={process.env.PUBLIC_URL +'/assets/images/logo/p3.png'} alt="mdo" width="auto" height="82"/>
           </a>
 
           <a href="https://t.me/butanechain" target="_blank" rel="noopener noreferrer" className="linkStyle">Telegram</a>
